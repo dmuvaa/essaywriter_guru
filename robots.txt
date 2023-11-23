@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /wp-admin/
+Disallow: /dashboard/
+Disallow: /order/
+Disallow: /inquiry/
+Allow: /wp-admin/admin-ajax.php
+Host: https://www.edussay.com
+Sitemap: https://www.edussay.com/sitemap_index.xml

@@ -1,0 +1,114 @@
+window.rcappComponents = {
+    makeDashboardTopHeader: function(e) {
+        return function(t) {
+            var a = t.UserBlock;
+            return e.createElement("header", {
+                className: "Header__top Page__width"
+            }, e.createElement("a", {
+                className: "Header__logo",
+                href: "/",
+                title: "Go to Home Page"
+            }, e.createElement("img", {
+                className: "Header__logo-img",
+                src: uvocorp.siteLogo,
+                alt: uvocorp.siteName,
+                width: "200",
+                height: "46"
+            })), e.createElement("div", Object.assign({
+                className: "Header__user-info"
+            }, t.userInfoProps), e.createElement(a, null)))
+        }
+    },
+    makeDashboardNav: function(e) {
+        return function(t) {
+            var a = t.NavLink
+              , n = t.leftButtons
+              , l = t.rightButtons;
+            function i(t) {
+                return e.createElement(a, {
+                    key: t.id,
+                    to: t.path,
+                    className: "MenuButton MenuButton--".concat(t.id, " cw-nav-menu-item"),
+                    activeClassName: "MenuButton--active",
+                    exact: !0
+                }, e.createElement("span", {
+                    className: "MenuButton__icon"
+                }), e.createElement("span", {
+                    className: "MenuButton__title"
+                }, t.title), e.createElement("span", {
+                    className: "MenuButton__short-title"
+                }, t.shortTitle), void 0 !== t.badge && e.createElement("span", {
+                    className: "MenuButton__badge"
+                }, t.badge))
+            }
+            return e.createElement("div", {
+                className: "Header__menu"
+            }, e.createElement("div", {
+                className: "Page__width Header__menu__buttons"
+            }, n && 0 !== n.length && e.createElement("div", {
+                className: "Header__menu__buttons__left"
+            }, n.map(i)), l && 0 !== l.length && e.createElement("div", {
+                className: "Header__menu__buttons__right"
+            }, l.map(i))))
+        }
+    },
+    makeUserBlockWhois: function(e) {
+        return function(t) {
+            return e.createElement("span", {
+                className: "UserBlockWhois ".concat(t.menuOpen ? "UserBlockWhois--open" : ""),
+                onMouseEnter: t.onMouseEnter,
+                onMouseLeave: t.onMouseLeave,
+                onClick: t.onClick
+            }, t.children)
+        }
+    },
+    makeAuthPage: function(e) {
+        return function(t) {
+            return e.createElement("div", {
+                className: "mini-auth-page"
+            }, e.createElement("div", {
+                className: "mini-auth-page__header"
+            }, e.createElement("a", {
+                href: "/",
+                className: "mini-auth-page__logo"
+            }, e.createElement("img", {
+                src: uvocorp.siteLogo,
+                alt: uvocorp.siteName,
+                width: "275",
+                height: "65"
+            }))), e.createElement("div", {
+                className: "mini-auth-page__body"
+            }, e.createElement("div", {
+                className: "auth-block"
+            }, e.createElement("div", {
+                className: "auth-block__inner-wrapper"
+            }, e.createElement("div", {
+                className: "auth-block__auth-pane"
+            }, e.createElement("div", {
+                className: "auth-block__title"
+            }, t.title), t.children), e.createElement("div", {
+                className: "auth-block__info-pane"
+            }, e.createElement("div", {
+                className: "auth-block__info-pane__title"
+            }, "Get help with your academic paper right away"), e.createElement("div", {
+                className: "auth-block__info-pane__body"
+            }, e.createElement("div", {
+                className: "auth-block__info-pane__item auth-block__info-pane__item--confidential"
+            }, e.createElement("div", {
+                className: "auth-block__info-pane__title__text"
+            }, "Confidentiality and security at every step")), e.createElement("div", {
+                className: "auth-block__info-pane__item auth-block__info-pane__item--quality"
+            }, e.createElement("div", {
+                className: "auth-block__info-pane__title__text"
+            }, "Top-quality content for any kind of paper")), e.createElement("div", {
+                className: "auth-block__info-pane__item auth-block__info-pane__item--fromscratch"
+            }, e.createElement("div", {
+                className: "auth-block__info-pane__title__text"
+            }, "Authentic writing with every order"))))))), t.footer)
+        }
+    },
+    footerOptions: {
+        copyrightText: "© " + (new Date).getFullYear() + " " + uvocorp.siteName + ". All Rights Reserved.",
+        withMask: !0
+    }
+};

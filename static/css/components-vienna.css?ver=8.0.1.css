@@ -1,0 +1,413 @@
+body:not(.order-page) .Page__width {
+    width: 100%;
+    max-width: 1232px;
+    padding: 0 1rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.Header {
+    background-color: #fff
+}
+
+.Header__top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    height: 75px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+@media (min-width: 1024px) {
+    .Header__top {
+        max-width:1200px
+    }
+}
+
+.Header__logo-img {
+    max-width: 240px;
+    margin: 5px 0
+}
+
+@media (min-width: 1024px) {
+    .Header__logo-img {
+        max-width:none
+    }
+}
+
+.Header__menu:not(.header__menu) {
+    background-color: #05ada3!important
+}
+
+.Header__menu:not(.header__menu)__buttons {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.Header__menu:not(.header__menu) .MenuButton--active,.Header__menu:not(.header__menu) .MenuButton:active,.Header__menu:not(.header__menu) .MenuButton:focus,.Header__menu:not(.header__menu) .MenuButton:hover {
+    background-color: #0f9189
+}
+
+.Header .UserBlock {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.Header__user-info {
+    margin-left: 8px
+}
+
+@media (min-width: 768px) {
+    .Header__user-info {
+        margin-left:16px
+    }
+}
+
+.UserBlockWhois {
+    position: relative;
+    margin: 0;
+    width: 56px;
+    height: 40px;
+    border-radius: 25px;
+    -webkit-box-shadow: 0 0 0 2px rgba(183,198,205,.3) inset;
+    box-shadow: inset 0 0 0 2px rgba(183,198,205,.3);
+    background: url(../images/ico_manage-orders.svg) 13px no-repeat;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+@media (min-width: 1024px) {
+    .UserBlockWhois {
+        background-position:20px;
+        width: 72px;
+        height: 44px
+    }
+}
+
+.UserBlockWhois:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 13px;
+    width: 10px;
+    height: 6px;
+    background: url(../images/ico_manage-orders-arrow.svg) no-repeat;
+    bottom: 0;
+    margin: auto
+}
+
+@media (min-width: 1024px) {
+    .UserBlockWhois:after {
+        right:20px
+    }
+}
+
+.mini-auth-page {
+    min-height: 100vh;
+    background-color: #f2f6f9;
+    color: #464646;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.mini-auth-page,.mini-auth-page__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.mini-auth-page__header {
+    overflow: hidden;
+    background-color: #fff;
+    height: 120px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.mini-auth-page__logo {
+    display: inline-block;
+    margin-bottom: -.5rem
+}
+
+.mini-auth-page__body {
+    width: 100%;
+    margin: 0 auto auto
+}
+
+.mini-auth-page__footer {
+    position: relative;
+    z-index: 0;
+    padding: 2.5rem 0;
+    text-align: center;
+    font-size: .875rem;
+    color: #405262;
+    background-color: #f2f6f9
+}
+
+.mini-auth-page__footer__link {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 1rem;
+    color: #405262;
+    font-weight: 700
+}
+
+.mini-auth-page__footer__link:hover {
+    color: #05ada3
+}
+
+.mini-auth-page__footer__copyrights {
+    margin: 1.5rem 0 0;
+    font-size: 1rem;
+    line-height: 1.8
+}
+
+.mini-auth-page .rc-tel-input__select .Select-control .Select-value {
+    line-height: 40px
+}
+
+.auth-block {
+    position: relative;
+    background-color: #fff;
+    width: calc(100% - 1rem);
+    max-width: 480px;
+    margin: 2.5rem auto 5vw;
+    color: #000;
+    line-height: 1.4;
+    -webkit-box-shadow: 0 15px 40px rgba(21,37,72,.08);
+    box-shadow: 0 15px 40px rgba(21,37,72,.08);
+    border-radius: 8px;
+    font-family: DM Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    overflow: hidden
+}
+
+@media (min-width: 768px) {
+    .auth-block {
+        max-width:765px
+    }
+}
+
+.auth-block>* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.auth-block__inner-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+@media (min-width: 768px) {
+    .auth-block__inner-wrapper {
+        -webkit-box-orient:horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row
+    }
+}
+
+.auth-block__title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    font-weight: 700
+}
+
+.auth-block__auth-pane {
+    width: 100%;
+    padding: 1.5rem 2rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.auth-block__auth-pane .Auth__bottom-buttons {
+    margin-bottom: 0;
+    padding-top: 0
+}
+
+.auth-block__info-pane {
+    background-color: #f2f6f9;
+    padding: 2rem 1.5rem;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+@media (min-width: 768px) {
+    .auth-block__info-pane {
+        max-width:280px
+    }
+}
+
+.auth-block__info-pane__title {
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 1rem;
+    margin-bottom: 1.5rem
+}
+
+.auth-block__info-pane__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 22px;
+    font-size: 1rem
+}
+
+.auth-block__info-pane__item:before {
+    content: "";
+    display: block;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    margin-right: 12px;
+    background-position: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 42px
+}
+
+.auth-block__info-pane__item--confidential:before {
+    background-image: url(../images/ico_secure.svg)
+}
+
+.auth-block__info-pane__item--quality:before {
+    background-image: url(../images/ico_quality.svg)
+}
+
+.auth-block__info-pane__item--fromscratch:before {
+    background-image: url(../images/ico_plagiarism-free.svg)
+}
+
+.auth-block .Auth__tabs {
+    border-bottom: 3px solid rgba(13,36,54,.2);
+    margin-bottom: 27px
+}
+
+.auth-block .Auth__tabs__item {
+    font-size: .875rem;
+    line-height: 1.4;
+    font-weight: 700;
+    margin-bottom: -3px;
+    color: rgba(13,36,54,.4)
+}
+
+.auth-block .Auth__tabs__item--active {
+    color: #0d2436;
+    border-bottom-color: #05ada3
+}
+
+.auth-block .Auth__auth-row__label {
+    font-size: 1rem
+}
+
+.auth-block .UIInput-default--color-default {
+    padding: .625rem 1rem;
+    font-size: .875rem;
+    border-radius: 8px;
+    font-weight: 500;
+    border-color: #b7c6cd
+}
+
+.auth-block .UIInput-default--color-default--focused,.auth-block .UIInput-default--color-default:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: #05ada3
+}
+
+.auth-block .UIInput-default--color-default.rc-tel-input__phone-input {
+    padding-left: 3rem
+}
+
+.auth-block .Auth__auth-row {
+    margin-bottom: 1rem
+}
+
+.auth-block .AuthSignIn__links button {
+    font-size: .875rem;
+    color: #0d2436;
+    font-weight: 700;
+    line-height: 22px
+}
+
+.auth-block .AuthSignIn__links button:active,.auth-block .AuthSignIn__links button:focus,.auth-block .AuthSignIn__links button:hover {
+    color: #05ada3;
+    background: none;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+.auth-block .rc-tel-input__select .Select-control {
+    height: 40px
+}
+
+.auth-block button[type=submit] {
+    font-family: DM Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    text-decoration: none;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 30px;
+    padding: 10px 37px;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.25;
+    border: 0;
+    display: inline-block;
+    background-color: #05ada3;
+    -webkit-transition: background-color .2s,-webkit-box-shadow .2s;
+    transition: background-color .2s,-webkit-box-shadow .2s;
+    transition: background-color .2s,box-shadow .2s;
+    transition: background-color .2s,box-shadow .2s,-webkit-box-shadow .2s;
+    color: #fff;
+    -webkit-box-shadow: 0 6px 12px rgba(5,173,163,.16);
+    box-shadow: 0 6px 12px rgba(5,173,163,.16)
+}
+
+.auth-block button[type=submit]:hover {
+    background-color: #02c3ac;
+    -webkit-box-shadow: 0 6px 12px rgba(26,141,205,.2);
+    box-shadow: 0 6px 12px rgba(26,141,205,.2);
+    color: #fff
+}
+
+.auth-block button[type=submit]:active {
+    background-color: #06a49a;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #fff
+}
